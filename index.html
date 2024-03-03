@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
 </head>
-<body style="background-color: #0d2d31; color: white;">
+<body id="core-body" style="background-color: #0d2d31; color: white;">
     <div class="outer-container">
         <!-- this is the title -->
         <div class="title">
@@ -40,15 +40,15 @@
         <div class="event">
             <h3>2. Onclick </h3>
 
-            <button id="myButton">Bootstrap</button>
-            <p id="displayValue"></p>
             <button id="myButton1">Submit</button>
             <p id="displayValue1"></p>
+            <button id="myButton">Bootstrap</button>
+            <p id="displayValue"></p>
             
             <!-- implement whatever you want to here -->
         </div>
         <div class="event">
-            <h3>3. Onmouseover </h3>
+            <h3>3. Onmouseover & Onmouseout </h3>
             <style>
                 #displayArea {
                   margin-top: 10px; /* Adding some space between button and displayed text */
@@ -57,21 +57,12 @@
                   margin-top: 10px; /* Adding some space between button and displayed text */
                 }
               </style>
-            <button onmouseover="displayText()">JavaScript</button>
+            <button onmouseover="displayText1()" onmouseout="cleanText()">View password</button>
+            <div id="displayArea1">*********</div>
+            <button onmouseover="displayText()" onmouseout="clearText()">JavaScript</button>
             <div id="displayArea"></div>
-            <button onmouseover="displayText1()">Bootstrap</button>
-            <div id="displayArea1"></div>
         </div>
-        <div class="event">
-            <h3>4.Onmouseout </h3>
-            <style>
-                #displayAreas {
-                  margin-top: 10px; /* Adding some space between button and displayed text */
-                }
-              </style>
-            <button onmouseover="cleanText()" onmouseout="playText()">JavaScript</button>
-            <div id="displayAreas"></div>
-        </div>
+        
         <div class="event">
             <h3>5. Onkeydown </h3>
             <!-- implement whatever you want to here -->
