@@ -7,16 +7,28 @@ function changeoption() {
 //onclick function implementation
 // JavaScript code
 document.getElementById("myButton").onclick = function() {
-    var value = "HTML (Hypertext Markup Language): HTML is the standard markup language used to create and design web pages. It provides the structure and content of a webpage, defining elements such as headings, paragraphs, links, images, and more.";
-    document.getElementById("displayValue").textContent = value;
-  };
-  document.getElementById("myButton1").onclick = function() {
-    var value = "CSS (Cascading Style Sheets): CSS is a style sheet language used for describing the presentation of a document written in HTML. It controls the layout, design, and appearance of web pages, including aspects such as colors, fonts, spacing, and positioning";
-    document.getElementById("displayValue1").textContent = value;
-  };document.getElementById("myButton2").onclick = function() {
-    var value = "JavaScript: JavaScript is a high-level programming language commonly used for creating interactive and dynamic behavior in web pages. It enables developers to manipulate the content and behavior of HTML elements, handle events, perform calculations, and communicate with servers, among other functionalities.";
-    document.getElementById("displayValue2").textContent = value;
-  };
+    var displayElement = document.getElementById("displayValue");
+    if (displayElement.textContent === "") {
+        var value = "Bootstrap is a popular front-end framework for building responsive and mobile-first websites and web applications. It provides pre-designed templates, CSS and JavaScript components, and utilities that help developers quickly create consistent and visually appealing user interfaces. Bootstrap simplifies the process of creating responsive layouts, styling elements, and implementing interactive components, making web development more efficient and accessible.";
+        displayElement.textContent = value;
+    } else {
+        displayElement.textContent = "";
+    }
+};
+
+document.getElementById("myButton1").onclick = function() {
+    alert("Not authorized");
+};
+    // var displayElement1 = document.getElementById("displayValue1");
+    // if (displayElement1.textContent === "") {
+    //     var value = "CSS (Cascading Style Sheets): CSS is a style sheet language used for describing the presentation of a document written in HTML. It controls the layout, design, and appearance of web pages, including aspects such as colors, fonts, spacing, and positioning";
+    //     displayElement1.textContent = value;
+    // } else {
+    //     displayElement1.textContent = "";
+    // }
+
+
+
 
   
 
