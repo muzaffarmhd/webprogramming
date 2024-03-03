@@ -49,11 +49,28 @@
         </div>
         <div class="event">
             <h3>3. Onmouseover </h3>
-            <!-- implement whatever you want to here -->
+            <style>
+                #displayArea {
+                  margin-top: 10px; /* Adding some space between button and displayed text */
+                }
+                #displayArea1 {
+                  margin-top: 10px; /* Adding some space between button and displayed text */
+                }
+              </style>
+            <button onmouseover="displayText()">JavaScript</button>
+            <div id="displayArea"></div>
+            <button onmouseover="displayText1()">Bootstrap</button>
+            <div id="displayArea1"></div>
         </div>
         <div class="event">
-            <h3>4. Onmouseout </h3>
-            <!-- implement whatever you want to here -->
+            <h3>4.Onmouseout </h3>
+            <style>
+                #displayAreas {
+                  margin-top: 10px; /* Adding some space between button and displayed text */
+                }
+              </style>
+            <button onmouseover="cleanText()" onmouseout="playText()">JavaScript</button>
+            <div id="displayAreas"></div>
         </div>
         <div class="event">
             <h3>5. Onkeydown </h3>

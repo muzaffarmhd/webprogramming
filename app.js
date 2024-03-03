@@ -26,18 +26,33 @@ document.getElementById("myButton1").onclick = function() {
     // } else {
     //     displayElement1.textContent = "";
     // }
-
-
-
-
-  
-
-
 //onmouseover function implementation
-
-
-
+  function displayText() {
+    // Get the element where you want to display the text
+    var displayArea = document.getElementById("displayArea");
+    // Change the text content of the element
+    displayArea.textContent = "JavaScript is a versatile programming language primarily used for web development. It enables the creation of interactive and dynamic content on web pages. JavaScript runs on the client-side, executing in users' web browsers, and interacts with the Document Object Model (DOM) to manipulate web page elements.JavaScript can also be used for server-side development, making it a key technology in full-stack web development.";
+  }
+  function displayText1() {
+    var displayArea = document.getElementById("displayArea1");
+    displayArea1.textContent ="Bootstrap is a popular front-end framework for building responsive and mobile-first websites and web applications. It provides pre-designed templates, CSS and JavaScript components, and utilities that help developers quickly create consistent and visually appealing user interfaces. Bootstrap simplifies the process of creating responsive layouts, styling elements, and implementing interactive components, making web development more efficient and accessible.";
+  }
 //onmouseout function implementation
+function playText() {
+    // Get the element where you want to display the text
+    var displayAreas = document.getElementById("displayAreas");
+    
+    // Change the text content of the element
+    displayAreas.textContent = "JavaScript is a versatile programming language primarily used for web development. It enables the creation of interactive and dynamic content on web pages. JavaScript runs on the client-side, executing in users' web browsers, and interacts with the Document Object Model (DOM) to manipulate web page elements. JavaScript can also be used for server-side development, making it a key technology in full-stack web development.";
+  }
+
+  function cleanText() {
+    // Get the element where you want to display the text
+    var displayAreas = document.getElementById("displayAreas");
+    
+    // Clear the text content of the element
+    displayAreas.textContent = "";
+  }
 
 
 
