@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP-4</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body style="background-color: #0d2d31; color: white;">
+    <div class="outer-container">
+        <!-- this is the title -->
+        <div class="title">
+            <h1>4.Event handling using JavaScript</h1>
+        </div>
+        <div class="change">
+            <h3>1. OnChange </h3>
+            <select id="mySelect" onchange="changeoption()">
+                <option value="HTML (Hypertext Markup Language): HTML is the standard markup language used to create and design web pages. It provides the structure and content of a webpage, defining elements such as headings, paragraphs, links, images, and more.">HTML</option>
+                <option value="CSS (Cascading Style Sheets): CSS is a style sheet language used for describing the presentation of a document written in HTML. It controls the layout, design, and appearance of web pages, including aspects such as colors, fonts, spacing, and positioning.">CSS</option>
+                <option value="JavaScript: JavaScript is a high-level programming language commonly used for creating interactive and dynamic behavior in web pages. It enables developers to manipulate the content and behavior of HTML elements, handle events, perform calculations, and communicate with servers, among other functionalities.">JavaScript</option>
+            </select>
+            <p id="change-description">
+                <!-- here we are changing the inner html using JavaScript -->
+                You currently didn't select any option.
+                Please select an option from the dropdown
+            </p>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
