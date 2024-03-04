@@ -65,6 +65,17 @@
         
         <div class="event">
             <h3>5. Onkeydown </h3>
+            <input type="text" id="myInput">
+
+            <script>
+                document.addEventListener("keydown", function(event) {
+                    var keyCode = event.keyCode || event.which;
+                    if (keyCode === 65) {
+                        alert("Hello World!");
+                    }
+                });
+                </script>
+
             <!-- implement whatever you want to here -->
         </div>
     </div>
